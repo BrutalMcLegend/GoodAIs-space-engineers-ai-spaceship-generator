@@ -65,19 +65,27 @@ for logger_name in ACTIVE_LOGGERS:
 setup_matplotlib(larger_fonts=False)
 
 used_ll_blocks = [
+    #usable blocks
+    #Cockpits
+    'MyObjectBuilder_Cockpit_OpenCockpitLarge',
+    #Energy Generation
+    'MyObjectBuilder_Reactor_LargeBlockSmallGenerator',
+    #Ship Control
+    'MyObjectBuilder_Gyro_LargeBlockGyro',
+    #Storage
+    'MyObjectBuilder_CargoContainer_LargeBlockSmallContainer',
+    #Thrusters
+    'MyObjectBuilder_Thrust_LargeBlockSmallThrust',
+    #Lights
+    'MyObjectBuilder_InteriorLight_SmallLight',
+    'MyObjectBuilder_InteriorLight_LargeBlockLight_1corner',
+    #Integrity Blocks
     'MyObjectBuilder_CubeBlock_LargeBlockArmorCornerInv',
     'MyObjectBuilder_CubeBlock_LargeBlockArmorCorner',
     'MyObjectBuilder_CubeBlock_LargeBlockArmorSlope',
     'MyObjectBuilder_CubeBlock_LargeBlockArmorBlock',
-    'MyObjectBuilder_Gyro_LargeBlockGyro',
-    'MyObjectBuilder_Reactor_LargeBlockSmallGenerator',
-    'MyObjectBuilder_CargoContainer_LargeBlockSmallContainer',
-    'MyObjectBuilder_Cockpit_OpenCockpitLarge',
-    'MyObjectBuilder_Thrust_LargeBlockSmallThrust',
-    'MyObjectBuilder_InteriorLight_SmallLight',
     'MyObjectBuilder_CubeBlock_Window1x1Slope',
     'MyObjectBuilder_CubeBlock_Window1x1Flat',
-    'MyObjectBuilder_InteriorLight_LargeBlockLight_1corner'
 ]
 
 lsystem = get_default_lsystem(used_ll_blocks=used_ll_blocks)
